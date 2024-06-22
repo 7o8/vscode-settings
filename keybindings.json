@@ -1,0 +1,124 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+w",
+        "command": "workbench.action.switchWindow"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.switchWindow"
+    },
+
+    // -------------------------------------------------------
+    // Tmux-Style.
+    // -------------------------------------------------------
+    // Move to terminal.
+    {
+        "key": "ctrl+b j",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorFocus"
+    },
+    // Move to editor.
+    {
+        "key": "ctrl+b k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    // Display the editor or terminal in full screen.
+    {
+        "key": "ctrl+b z",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+b z",
+        "command": "workbench.action.togglePanel",
+        "when": "editorFocus"
+    },
+    // Split Terminal.
+    {
+        "key": "ctrl+b shift+'",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    // Move to Split Terminal.
+    {
+        "key": "ctrl+b l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+b h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+left",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+
+    // -------------------------------------------------------
+    // NERDTree-Style(Vim Plugin).
+    // -------------------------------------------------------
+    // Show/Hide explorer.
+    {
+        "key": "ctrl+t",
+        "command": "workbench.view.explorer",
+        "when": "!explorerViewletVisible && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+    },
+    // Open file with Enter(MacOS Only).
+    {
+        "key": "Enter",
+        "command": "list.select",
+        "when": "isMac && explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    // Open file with "o".
+    {
+        "key": "o",
+        "command": "list.select",
+        "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    // Open dir with Enter(MacOS Only).
+    {
+        "key": "Enter",
+        "command": "list.toggleExpand",
+        "when": "isMac && explorerViewletVisible && explorerResourceIsFolder && !inputFocus"
+    },
+    // Open file in a new vsplit.
+    {
+        "key": "s",
+        "command": "explorer.openToSide",
+        "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+
+    // -------------------------------------------------------
+    // Vim
+    // -------------------------------------------------------
+    // Disable opening file with "l".
+    {
+        "key": "l",
+        "command": "-list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+w l",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+]
