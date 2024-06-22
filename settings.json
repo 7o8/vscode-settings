@@ -1,0 +1,47 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.fontSize": 10,
+    "terminal.integrated.fontFamily": "Inconsolata for Powerline",
+
+    // -------------------------------------------------------
+    // Vim Settings.
+    // -------------------------------------------------------
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      }
+    ],
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+      },
+      {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+      },
+      {
+        "before": ["s", "s"],
+        "commands": [":split"]
+      },
+      {
+        "before": ["v", "s"],
+        "commands": [":vsplit"]
+      },
+    ],
+
+    "vim.leader": "<space>",
+    
+    "vim.handleKeys": {
+      // "<C-a>": false,
+      "<C-f>": false
+    },
+}
