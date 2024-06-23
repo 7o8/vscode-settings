@@ -1,3 +1,3 @@
 # vscode-settings
-# keybinding.json
-# settings.json
+- keybinding.json
+- settings.json
