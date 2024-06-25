@@ -9,9 +9,6 @@
         "command": "-workbench.action.switchWindow"
     },
 
-    // -------------------------------------------------------
-    // Tmux-Style.
-    // -------------------------------------------------------
     // Move to terminal.
     {
         "key": "ctrl+b j",
@@ -67,10 +64,6 @@
         "command": "-workbench.action.terminal.focusPreviousPane",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
-
-    // -------------------------------------------------------
-    // NERDTree-Style(Vim Plugin).
-    // -------------------------------------------------------
     // Show/Hide explorer.
     {
         "key": "ctrl+t",
@@ -106,10 +99,6 @@
         "command": "explorer.openToSide",
         "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
     },
-
-    // -------------------------------------------------------
-    // Vim
-    // -------------------------------------------------------
     // Disable opening file with "l".
     {
         "key": "l",
