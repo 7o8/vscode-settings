@@ -36,6 +36,14 @@
         "before": ["v", "s"],
         "commands": [":vsplit"]
       },
+      {
+        "before": ["u"],
+        "commands": [":undo"]
+      },
+      {
+        "before": ["r"],
+        "commands": [":redo"]
+      }
     ],
 
     "vim.leader": "<space>",
