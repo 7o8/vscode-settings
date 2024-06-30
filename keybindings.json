@@ -66,14 +66,14 @@
     },
     // Show/Hide explorer.
     {
-        "key": "ctrl+t",
+        "key": "space e",
         "command": "workbench.view.explorer",
-        "when": "!explorerViewletVisible && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+        "when": "!explorerViewletVisible && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert' && !terminalFocus"
     },
     {
-        "key": "ctrl+t",
+        "key": "space e",
         "command": "workbench.action.toggleSidebarVisibility",
-        "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+        "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert' && !terminalFocus"
     },
     // Open file with Enter(MacOS Only).
     {
