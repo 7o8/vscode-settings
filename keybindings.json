@@ -113,6 +113,7 @@
     // show cmdline.
     {
         "key": "shift+;",
-        "command": "vim.showQuickpickCmdLine"
+        "command": "vim.showQuickpickCmdLine",
+        "when": "editorFocus"
     },
 ]
