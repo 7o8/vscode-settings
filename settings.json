@@ -43,6 +43,10 @@
       {
         "before": ["r"],
         "commands": [":redo"]
+      },
+      {
+        "before": ["<leader>", "w"],
+        "commands": [":w"]
       }
     ],
 
