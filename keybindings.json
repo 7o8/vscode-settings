@@ -110,10 +110,4 @@
         "command": "workbench.action.focusFirstEditorGroup",
         "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
     },
-    // show cmdline.
-    {
-        "key": "shift+;",
-        "command": "vim.showQuickpickCmdLine",
-        "when": "editorFocus"
-    },
 ]
