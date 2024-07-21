@@ -66,12 +66,12 @@
     },
     // Show/Hide explorer.
     {
-        "key": "ctrl+t",
+        "key": "ctrl+[",
         "command": "workbench.view.explorer",
         "when": "!explorerViewletVisible && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
     },
     {
-        "key": "ctrl+t",
+        "key": "ctrl+[",
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
     },
